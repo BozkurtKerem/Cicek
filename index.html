@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Magical Retro Lila Garden</title>
+    <title>senin icin hazirladim</title>
     <style>
         *,
         *::after,
@@ -323,16 +323,13 @@
             const dot = document.createElement('div');
             dot.className = 'pixel-dot';
 
-            // Rastgele boyut (2px - 6px)
             const size = Math.random() * 4 + 2;
             dot.style.width = size + 'px';
             dot.style.height = size + 'px';
 
-            // Rastgele retro renkler
             dot.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
             dot.style.boxShadow = `0 0 ${size * 2}px ${dot.style.backgroundColor}`;
 
-            // Çiçeğin kafasına yakın rastgele konum
             const randomX = (Math.random() - 0.5) * 80;
             dot.style.left = randomX + "px";
             dot.style.top = "-10px";
@@ -342,7 +339,6 @@
             setTimeout(() => { dot.remove(); }, 2500);
         }
 
-        // Çiçeklerden sürekli ve yoğun parıltı (Belirginleştirildi)
         setInterval(() => createPixel('fl1'), 150);
         setInterval(() => createPixel('fl2'), 250);
         setInterval(() => createPixel('fl3'), 200);
